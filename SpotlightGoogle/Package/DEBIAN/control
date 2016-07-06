@@ -1,0 +1,17 @@
+Package: com.zerox.SpotlightGoogle
+Name: SpotlightGoogle
+Version: 1.0-1
+Description: Use Google app to search from Spotlight
+Section: Tweak
+Depends: firmware (>= 9.0), mobilesubstrate
+Conflicts: 
+Replaces: 
+Priority: optional
+Architecture: iphoneos-arm
+Author: ZeroX <lawliet0914@gmail.com>
+dev: 
+Homepage: https://github.com/zerox333/SpotlightGoogle
+Depiction:
+Maintainer: ZeroX <lawliet0914@gmail.com>
+Icon: 
+

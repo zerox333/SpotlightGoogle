@@ -1,0 +1,363 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D701162F1D2C9C8D00582489 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D701162E1D2C9C8D00582489 /* Foundation.framework */; };
+		D701163A1D2C9C8D00582489 /* SpotlightGoogle.mm in Sources */ = {isa = PBXBuildFile; fileRef = D70116391D2C9C8D00582489 /* SpotlightGoogle.mm */; };
+		D70116451D2C9CA300582489 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D70116441D2C9CA300582489 /* UIKit.framework */; };
+		D70116471D2C9CAC00582489 /* libsubstrate.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D70116461D2C9CAC00582489 /* libsubstrate.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D701162B1D2C9C8D00582489 /* SpotlightGoogle.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = SpotlightGoogle.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		D701162E1D2C9C8D00582489 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D70116331D2C9C8D00582489 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		D70116341D2C9C8D00582489 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		D70116361D2C9C8D00582489 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		D70116371D2C9C8D00582489 /* SpotlightGoogle-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpotlightGoogle-Prefix.pch"; sourceTree = "<group>"; };
+		D70116381D2C9C8D00582489 /* SpotlightGoogle.xm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SpotlightGoogle.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		D70116391D2C9C8D00582489 /* SpotlightGoogle.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SpotlightGoogle.mm; sourceTree = "<group>"; };
+		D701163E1D2C9C8D00582489 /* SpotlightGoogle.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = SpotlightGoogle.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/SpotlightGoogle.plist; sourceTree = "<group>"; };
+		D70116441D2C9CA300582489 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D70116461D2C9CAC00582489 /* libsubstrate.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsubstrate.dylib; path = ../../../../opt/iOSOpenDev/lib/libsubstrate.dylib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D70116271D2C9C8D00582489 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D70116471D2C9CAC00582489 /* libsubstrate.dylib in Frameworks */,
+				D70116451D2C9CA300582489 /* UIKit.framework in Frameworks */,
+				D701162F1D2C9C8D00582489 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D70116201D2C9C8D00582489 = {
+			isa = PBXGroup;
+			children = (
+				D70116301D2C9C8D00582489 /* SpotlightGoogle */,
+				D701162D1D2C9C8D00582489 /* Frameworks */,
+				D701162C1D2C9C8D00582489 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D701162C1D2C9C8D00582489 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D701162B1D2C9C8D00582489 /* SpotlightGoogle.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D701162D1D2C9C8D00582489 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D70116461D2C9CAC00582489 /* libsubstrate.dylib */,
+				D70116441D2C9CA300582489 /* UIKit.framework */,
+				D701162E1D2C9C8D00582489 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D70116301D2C9C8D00582489 /* SpotlightGoogle */ = {
+			isa = PBXGroup;
+			children = (
+				D70116381D2C9C8D00582489 /* SpotlightGoogle.xm */,
+				D70116391D2C9C8D00582489 /* SpotlightGoogle.mm */,
+				D70116311D2C9C8D00582489 /* Package */,
+				D70116351D2C9C8D00582489 /* Supporting Files */,
+			);
+			path = SpotlightGoogle;
+			sourceTree = "<group>";
+		};
+		D70116311D2C9C8D00582489 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				D70116321D2C9C8D00582489 /* DEBIAN */,
+				D701163B1D2C9C8D00582489 /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		D70116321D2C9C8D00582489 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				D70116331D2C9C8D00582489 /* control.txt */,
+				D70116341D2C9C8D00582489 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		D70116351D2C9C8D00582489 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D70116361D2C9C8D00582489 /* PackageVersion.plist */,
+				D70116371D2C9C8D00582489 /* SpotlightGoogle-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D701163B1D2C9C8D00582489 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				D701163C1D2C9C8D00582489 /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		D701163C1D2C9C8D00582489 /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				D701163D1D2C9C8D00582489 /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		D701163D1D2C9C8D00582489 /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				D701163E1D2C9C8D00582489 /* SpotlightGoogle.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D70116281D2C9C8D00582489 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D701162A1D2C9C8D00582489 /* SpotlightGoogle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D70116411D2C9C8D00582489 /* Build configuration list for PBXNativeTarget "SpotlightGoogle" */;
+			buildPhases = (
+				D70116251D2C9C8D00582489 /* ShellScript */,
+				D70116261D2C9C8D00582489 /* Sources */,
+				D70116271D2C9C8D00582489 /* Frameworks */,
+				D70116281D2C9C8D00582489 /* Headers */,
+				D70116291D2C9C8D00582489 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpotlightGoogle;
+			productName = SpotlightGoogle;
+			productReference = D701162B1D2C9C8D00582489 /* SpotlightGoogle.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D70116211D2C9C8D00582489 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				TargetAttributes = {
+					D701162A1D2C9C8D00582489 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = D70116241D2C9C8D00582489 /* Build configuration list for PBXProject "SpotlightGoogle" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D70116201D2C9C8D00582489;
+			productRefGroup = D701162C1D2C9C8D00582489 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D701162A1D2C9C8D00582489 /* SpotlightGoogle */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D70116251D2C9C8D00582489 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp-logos";
+		};
+		D70116291D2C9C8D00582489 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D70116261D2C9C8D00582489 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D701163A1D2C9C8D00582489 /* SpotlightGoogle.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D701163F1D2C9C8D00582489 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		D70116401D2C9C8D00582489 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		D70116421D2C9C8D00582489 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpotlightGoogle/SpotlightGoogle-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "71f849f7-c8e8-46e6-8e61-228c32638588";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = 192.168.233.55;
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		D70116431D2C9C8D00582489 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpotlightGoogle/SpotlightGoogle-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "71f849f7-c8e8-46e6-8e61-228c32638588";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = 192.168.233.55;
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D70116241D2C9C8D00582489 /* Build configuration list for PBXProject "SpotlightGoogle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D701163F1D2C9C8D00582489 /* Debug */,
+				D70116401D2C9C8D00582489 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D70116411D2C9C8D00582489 /* Build configuration list for PBXNativeTarget "SpotlightGoogle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D70116421D2C9C8D00582489 /* Debug */,
+				D70116431D2C9C8D00582489 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D70116211D2C9C8D00582489 /* Project object */;
+}
